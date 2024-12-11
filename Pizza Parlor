@@ -1,0 +1,41 @@
+print ("Welcome to Pizza Parlor!")
+totalprice = 0
+while True:
+    size = input("What sized pizza would you like? S = 15$, M = 20$, or L = 25$").upper()
+    if size == "S":
+        print("You ordered a small.")
+        totalprice += 15
+        break
+    if size == "M":
+        totalprice += 20
+        print("You ordered a medium.")
+        break
+    if size == "L":
+        totalprice += 25
+        print("You ordered a large.")
+        break
+    else:
+        print("Please choose a valid size.")
+
+
+while True:
+    toppings = input("Would you like toppings?")
+    if toppings == "yes":
+        toppingchoice = input("Which topping would you like? Available toppings are: Pepperoni - 5$, Mushroom - 4$, and Olive - 6$")
+        if toppingchoice == "pepperoni":
+            totalprice+= 5
+        elif toppingchoice== "mushroom":
+            totalprice+=4
+        elif toppingchoice == "olive":
+            totalprice +=6
+        else:
+            print("Please choose a valid topping..")
+        break
+    if toppings =="no":
+        print("No toppings selected.")
+        break
+    else:
+        print("Answer the question, dawg.")
+
+print (f"Your total bill is {totalprice} dollars.")
+    
