@@ -1,0 +1,28 @@
+import random
+
+
+choices = ["rock","paper","scissors"]
+player = input("Choose rock, paper, or scissors.")
+ 
+comp = random.choice(choices)
+
+if player == comp:
+    print(f"Computer chose {comp}. It's a tie.")
+    
+elif player == "rock":
+    if comp == "scissors":
+        print(f"Computer chose {comp}. You win.🏆")
+    else:
+        print(f"Computer chose {comp}. You lose")
+elif player == "scissors":
+    if comp == "paper":
+        print(f"Computer chose {comp}. You win.🏆")
+    else:
+        print(f"Computer chose {comp}. You lose")
+elif player == "paper":
+    if comp == "rock":
+        print(f"Computer chose {comp}. You win. 🏆")
+    else:
+        print(f"Computer chose {comp}. You lose")
+else:
+    print("Please choose rock, paper, or scissors.")
