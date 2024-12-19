@@ -1,0 +1,9 @@
+scores = [2,1,3,203,7,8,9,10,11,12,122,14,15,43,17,18,19,20]
+
+highest = 0
+
+for number in scores:
+    if number> highest:
+        highest = number
+    
+print(highest)
